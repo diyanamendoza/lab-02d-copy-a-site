@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    display:grid;
+    grid-template-rows: 60px 80px 200px 1fr;
+    font-family:Arial, Helvetica, sans-serif,Tahoma, sans-serif;
+
+}
+
+header {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin:5px;
+}
+
+
+.header-right > div {
+    margin:5px;
+}
+
+
+.header-right {
+    display:flex;
+    justify-content:flex-end;
+    margin:5px;
+}
+
+.header-left {
+    display:flex;
+    justify-content: flex-start;
+    margin:5px;
+}
+
+.header-left > div {
+    margin:5px;
+}
+
+.top-bar {
+    border-top:rgb(216, 216, 216) solid .05px;
+    border-bottom:rgb(216, 216, 216) solid .05px;
+    background-color:rgb(241, 238, 238);
+}
+
+main {
+    position: relative;
+    bottom:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-doc-row {
+    display:flex;
+    align-items:center;
+    margin-left:100px;
+}
+
+.text-doc-row > div {
+    margin:5px;
+    padding:5px;
+    border:rgb(216, 216, 216) solid .05px;
+    border-radius:5px;
+}
+
+.main-box {
+    background-color: white;
+    display:grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    border:rgb(216, 216, 216) solid .05px;
+    border-radius:5px;
+    max-width:1000px;
+    box-shadow:rgb(185, 185, 185) 1px 1px 1px;
+}
+
+.sourcelang-box {
+    border-right:rgb(216, 216, 216) solid .05px;
+}
+
+.sourcelang-box-menu {
+    border-bottom:rgb(216, 216, 216) solid .05px;
+}
+.sourcelang-box-menu li {
+    display:inline-block;
+    text-transform: uppercase;
+    font-size:small;
+    margin:5px;
+}
+.outputlang-box-menu {
+    border-bottom:rgb(216, 216, 216) solid .05px;
+}
+
+.outputlang-box-menu li {
+    display:inline-block;
+    text-transform: uppercase;
+    font-size:small;
+    margin:5px;
+}
+
+.swap-button {
+    border-bottom:rgb(216, 216, 216) solid .05px;
+}
+
+.box-lower {
+    display:grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    min-height:150px;
+}
+
+#sourcelang-input {
+    width:500px;
+    height:100px;
+    border-style:hidden;
+}
+
+footer {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    margin-top:30px;
+
+}
